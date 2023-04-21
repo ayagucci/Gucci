@@ -1,0 +1,194 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.top-wrapper {
+    padding: 250px 0 100px 0;
+    margin-bottom: 50px;
+    background-image: url(グラデ.jpg);
+    background-size: cover;
+    height: 200px;
+    color: white;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.top-img {
+    text-align: center;
+}
+
+.top-img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.about-wrapper {
+    text-align: center;
+    height: 450px;
+    color: rgb(58, 58, 58);
+}
+
+.wrapper-title {
+    padding-top: 50px;
+    padding-bottom: 25px;
+    width: 30%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-bottom: solid 1px  rgb(180, 180, 180);
+}
+
+.about-title p {
+    font-size: 5px;
+}
+
+.about {
+    width: 33%;
+    float: left;
+}
+
+.about-icon p {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.about-icon img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    filter: grayscale(30%);
+}
+
+.about-icon p {
+    padding-top: 5px;
+}
+
+.books-wrapper {
+    text-align: center;
+    height: 500px;
+    color: rgb(58, 58, 58);
+
+}
+
+.books-intro {
+    margin-bottom: 10px;
+}
+
+.contact-wrapper {
+    text-align: center;
+    height: 500px;
+    color: rgb(58, 58, 58);
+}
+
+
+.btn {
+    color:  rgb(58, 58, 58);
+    margin: 0 5px;
+}
+
+.btn:hover {
+    color: rgb(237, 110, 237);
+}
+
+.contact-hello {
+    margin-top: 20px;
+}
+
+.hello{
+    /*テキストの基点とするためrelativeを指定*/
+  position: relative;
+    /*ボタンの形状*/
+  border: 1px solid #555;
+  border-radius:50px;
+    min-width:210px;
+  padding: 20px;
+    text-align: center;
+  display: inline-block;
+    text-decoration: none;
+    color: #333;
+    outline: none;
+    /*アニメーションの指定*/
+    transition: all .1s;
+}
+
+/*hoverした際の変化*/
+.hello:hover{
+  background:#333;
+  color:#fff;
+}
+
+.hello span{
+    /*絶対配置でテキストの位置を決める*/
+  position: absolute;
+  left: 50%;
+  top:50%;
+    transform:translate(-50%,-50%);
+    /*アニメーションの指定*/
+    transition: all .1s;
+  /*ブロック要素にしてテキスト折り返しなし*/  
+  display: block;
+  white-space: nowrap;
+}
+
+/*差し替わるテキストの設定*/
+.hello span:nth-child(2){
+  opacity:0;/*透過0に*/
+}
+
+/*hoverするとテキストが入れ替わる設定*/
+.hello:active span:nth-child(1){
+  opacity:0;/*透過0に*/
+}
+
+.hello:active span:nth-child(2){
+  opacity:1;/*不透明に*/
+}
+
+
+.fa {
+    margin-right: 5px;
+}
+
+
+header {
+    height: 200px;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.logo-name {
+    width: 100px;
+    margin-top: 50px;
+}
+
+
+footer {
+    height: 50px;
+    color: rgb(58, 58, 58);
+    display: block;
+}
